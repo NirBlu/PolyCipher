@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Blowfish Encode/Decode",
+  "version": "1.0",
+  "description": "Encode or decode messages using Blowfish encryption.",
+  "permissions": [],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_security_policy": "script-src 'self'; object-src 'self'"
+}

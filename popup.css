@@ -1,0 +1,59 @@
+body {
+  width: 300px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+h2 {
+  font-size: 16px;
+  margin: 0 0 10px;
+  text-align: center;
+}
+label {
+  font-size: 14px;
+}
+select, input[type="password"], textarea {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+textarea {
+  height: 80px;
+  resize: none;
+}
+.radio-group {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+button {
+  padding: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+.result-container {
+  margin-top: 10px;
+}
+.result {
+  font-size: 14px;
+  word-wrap: break-word;
+}
+.button-group {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+.button-group button {
+  padding: 5px 10px;
+  font-size: 12px;
+}

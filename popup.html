@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multi-Cipher Encode/Decode</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="blowfish.js"></script>
+  <script src="twofish.js" onerror="console.error('Failed to load twofish.js')"></script>
+  <script src="libsodium.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Multi-Cipher Encode/Decode</h2>
+    <form id="cipher-form" onsubmit="event.preventDefault();">
+      <label for="cipher">Cipher:</label>
+      <select id="cipher" name="cipher">
+        <option value="blowfish">Blowfish</option>
+        <option value="aes">AES</option>
+        <option value="chacha">ChaCha</option>
+        <option value="twofish">Twofish</option>
+      </select>
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      <label for="message">Message:</label>
+      <textarea id="message" required></textarea>
+      <div class="radio-group">
+        <label><input type="radio" name="action" value="encode" checked> Encode</label>
+        <label><input type="radio" name="action" value="decode"> Decode</label>
+      </div>
+      <button type="submit">Process</button>
+    </form>
+    <div class="result-container">
+      <div id="result" class="result"></div>
+      <div class="button-group">
+        <button id="copy-btn" style="display: none;">Copy</button>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
