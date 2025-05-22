@@ -12,7 +12,7 @@ This Firefox browser extension allows users to encode and decode messages using 
 ## Installation
 1. **Clone the Repository**:
    ```
-   git clone https://github.com/your-username/multi-cipher-extension.git
+   git clone https://github.com/nirblu/PolyCipher.git
    ```
 2. **Load the Extension in Firefox**:
    - Open Firefox and navigate to `about:debugging#/runtime/this-firefox`.
